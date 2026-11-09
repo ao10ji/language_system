@@ -27,10 +27,10 @@
     #cols { grid-template-columns: 1fr; }
   }
   .col p { margin: 0 0 1em; }
-  .talk p { line-height: 2.8; } /* ← 追加：2列目の行間を広げる */
+  .talk p { line-height: 2.8; }
   .chain p { margin: 0; line-height: 1.5; }
   .arrow { text-align: center; }
-  .nav { text-align: center; margin: 3rem 0 1rem; }
+  .nav { text-align: center; margin: 0 0 2rem; } /* ← 変更：上に置くため余白を調整 */
   button {
     font: inherit;
     color: var(--fg);
@@ -44,6 +44,10 @@
 </head>
 <body>
 <main>
+<div class="nav"><!-- ← 移動：ボタンを一番上へ -->
+  <button id="shuffle" type="button">ランダム ↻</button>
+</div>
+
 <div id="cols">
 
 <div class="col">
@@ -53,7 +57,7 @@
 <p>それでも言語システムは稼働している。</p>
 </div>
 
-<div class="col talk"><!-- ← 変更：class="col" を class="col talk" に -->
+<div class="col talk">
 <p>「聞こえる？」<br>
 「うーん、半分だけ」<br>
 「どっちの半分？」<br>
@@ -126,10 +130,6 @@
 <p>朝にXのトレンド入りし世界中に拡散された。</p>
 </div>
 
-</div>
-
-<div class="nav">
-  <button id="shuffle" type="button">ランダム ↻</button>
 </div>
 </main>
 
