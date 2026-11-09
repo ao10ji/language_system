@@ -27,6 +27,8 @@
     #cols { grid-template-columns: 1fr; }
   }
   .col p { margin: 0 0 1em; }
+  .talk p { line-height: 2.8; } /* ← 追加：2列目の行間を広げる */
+  .chain p { margin: 0; line-height: 1.5; }
   .arrow { text-align: center; }
   .nav { text-align: center; margin: 3rem 0 1rem; }
   button {
@@ -51,7 +53,7 @@
 <p>それでも言語システムは稼働している。</p>
 </div>
 
-<div class="col">
+<div class="col talk"><!-- ← 変更：class="col" を class="col talk" に -->
 <p>「聞こえる？」<br>
 「うーん、半分だけ」<br>
 「どっちの半分？」<br>
@@ -74,7 +76,7 @@
 「うん、でもそれでも話すしかないよ」</p>
 </div>
 
-<div class="col">
+<div class="col chain">
 <p>朝の公園で白い犬が赤い首輪をつけて走っていた。</p>
 <p class="arrow">↓</p>
 <p>朝の公園で白い犬が赤いものをつけて走っていた。</p>
